@@ -1,0 +1,15 @@
+{application, ex1_relup,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, {ex1_relup_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[{ticker, 1000}]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

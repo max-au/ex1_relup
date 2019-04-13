@@ -1,0 +1,6 @@
+-sname ex1_relup
+
+-setcookie ex1_relup_cookie
+
++K true
++A30
