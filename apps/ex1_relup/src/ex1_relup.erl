@@ -110,7 +110,7 @@ handle_cast(_Request, State) ->
     {noreply, NewState :: #state{}, timeout() | hibernate} |
     {stop, Reason :: term(), NewState :: #state{}}).
 handle_info(timer, State) ->
-    {ok, Ticker} = application:get_env(ticker),
+    Ticker = 500,
     io:format("Next tick in ~b ms!~n", [Ticker]),
     erlang:send_after(Ticker, self(), timer),
     {noreply, State};
