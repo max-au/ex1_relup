@@ -1,15 +1,11 @@
 {application, ex1_relup,
- [{description, "An OTP application"},
-  {vsn, "0.3.0"},
-  {registered, []},
+ [{description, "ex1_relup: example of a separate configuration delivery pipeline design"},
+  {vsn, "0.4.0"},
+  {registered, [config, watcher, subscription_manager, config_sup, watcher_sup]},
   {mod, {ex1_relup_app, []}},
   {applications,
    [kernel,
     stdlib
    ]},
-  {env,[]},
-  {modules, []},
-
-  {licenses, ["Apache 2.0"]},
-  {links, []}
+  {licenses, ["BSD 3-clause clear"]}
  ]}.

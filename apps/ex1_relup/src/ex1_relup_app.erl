@@ -1,9 +1,12 @@
 %%%-------------------------------------------------------------------
-%% @doc ex1_relup public API
-%% @end
+%%% @author Maxim Fedorov <maximfca@gmail.com>
+%%% @copyright (C) 2019, Maxim Fedorov
+%%% @doc
+%%% Application behaviour, starts top-level supervisor.
+%%% @end
 %%%-------------------------------------------------------------------
-
 -module(ex1_relup_app).
+-author("maximfca@gmail.com").
 
 -behaviour(application).
 
@@ -12,7 +15,6 @@
 
 %%====================================================================
 %% API
-%%====================================================================
 
 start(_StartType, _StartArgs) ->
     ex1_relup_sup:start_link().
@@ -20,7 +22,3 @@ start(_StartType, _StartArgs) ->
 %%--------------------------------------------------------------------
 stop(_State) ->
     ok.
-
-%%====================================================================
-%% Internal functions
-%%====================================================================
